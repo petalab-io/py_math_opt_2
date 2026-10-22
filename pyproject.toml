@@ -1,0 +1,35 @@
+[project]
+name = "py-math-opt-2"
+version = "0.0.1"
+requires-python = "==3.8.*"
+dependencies = [
+    "jupyter==1.0.0",
+    "pandas==1.2.4",
+    "cvxopt==1.2.6",
+    "pulp==2.4",
+    "matplotlib==3.3.4",
+    "seaborn==0.11.1",
+    "numpy==1.20.1",
+    "flask==2.0.1",
+    "fastapi==0.81.0",
+    "streamlit",
+    "requests==2.25.1",
+    "ipython",
+    "notebook",
+    "werkzeug==2.2.2",
+    "lxml",
+    "uvicorn[standard]",
+    "pympler",
+    "pytz-deprecation-shim",
+]
+
+[dependency-groups]
+dev = []
+
+[tool.uv]
+package = false
+default-groups = "all"
+
+[[tool.uv.index]]
+name = "pypi"
+url = "https://pypi.org/simple"
